@@ -1,0 +1,99 @@
+/* Importar fuente — siempre al inicio del archivo */ 
+@import 
+url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&di splay=swap');
+
+/* variables globales */
+:root{
+    /* colores */
+
+    --azul: #377dff;
+    --azul-noche: #1b2a4a;
+    --verde: #00c9a7;
+    --amarillo: #f6a623;
+    --fondo: #f4f6fa;
+    --texto: #1e2022;
+    --gris: #677788;
+    --blanco: #ffffff;
+    --borde: #e7eaf3;
+
+    /* tipografia */
+
+    --fuente: 'Poppins', sans-serif;
+
+    /* bordes y sombras */
+
+    --radio: 8px;
+    --radio-lg: 16px;
+    --sombra: 0 4px 20px rgba(0, 0, 0, 0.08);
+    --sombra-card: 0 8px 30px rgba(55, 125, 255, 0.12);
+    --transicion: 0.3s ease;
+}
+
+/* reset universal */
+
+*, *::bofore, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* base del body */
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: var(--fuente);
+    color: var(--texto);
+    background-color: var(--blanco);
+    line-height: 1.7;
+}
+
+h1, h2, h3, h4, h5{
+    line-height: 1.3;
+    color: var(--texto);
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+ul{
+    list-style: none;
+}
+
+/* botones globales */
+
+.btn{
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: var(--radio);
+    font-family: var(--fuente);
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: all var(--transicion);
+}
+
+.btn-primary{
+    background-color: var(--azul);
+    color: var(--blanco);
+}
+
+.btn-primary:hover{
+    background-color: #1a5fd4;
+    transform: translateY(-2px);
+}
+
+
+
+
+
