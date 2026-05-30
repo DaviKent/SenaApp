@@ -1,14 +1,270 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/estilo_index.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/cursos.css">
+    <link rel="stylesheet" href="js/cursos.js">
+    <title>SenaApp - Cursos</title>
 </head>
 <body>
-    
+
+  <!-- Hero cursos -->
+  <section class="cursos-hero">
+    <h1 class="cursos-hero-titulo">Explora todos nuestros cursos</h1>
+    <p class="cursos-hero-desc">Aprende a tu ritmo con los mejores expertos del mundo.</p>
+
+    <!-- Buscador -->
+    <div class="cursos-buscador">
+      <span>🔍</span>
+      <input type="text" placeholder="¿Qué quieres aprender hoy?">
+      <button class="btn btn-primary">Buscar</button>
+    </div>
+  </section>
+
+  <!-- Filtros -->
+  <section class="cursos-filtros">
+    <button class="filtro-btn activo">Todos</button>
+    <button class="filtro-btn">Programación</button>
+    <button class="filtro-btn">Diseño</button>
+    <button class="filtro-btn">JavaScript</button>
+    <button class="filtro-btn">Python</button>
+    <button class="filtro-btn">Bases de datos</button>
+    <button class="filtro-btn">Inteligencia Artificial</button>
+  </section>
+
+  <!-- Grid de cursos -->
+  <section class="cursos-catalogo">
+
+    <div class="curso-card">
+      <div class="curso-imagen azul-python">
+        <span class="curso-badge verde">Más vendido</span>
+        <div class="curso-img-deco deco-python"></div>
+      </div>
+      <div class="curso-body">
+        <div class="curso-estrellas">★★★★★ <span>4.91</span> <small>(1.5k+ reseñas)</small></div>
+        <p class="curso-categoria">PROGRAMACIÓN</p>
+        <h3 class="curso-nombre">Python completo: de cero a experto</h3>
+        <div class="curso-autor"><div class="autor-avatar"></div></div>
+        <div class="curso-meta">
+          <span>📋 10 lecciones</span>
+          <span>🕐 3h 25m</span>
+        </div>
+        <div class="curso-footer">
+          <div class="curso-precios">
+            <span class="precio-original">$114.99</span>
+            <span class="precio-actual">$99.99</span>
+          </div>
+          <a href="resumen.html" class="btn btn-primary">Ver curso</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="curso-card">
+      <div class="curso-imagen azul-illustrator">
+        <div class="curso-img-deco deco-illustrator"></div>
+      </div>
+      <div class="curso-body">
+        <div class="curso-estrellas">★★★★★ <span>4.95</span> <small>(1k+ reseñas)</small></div>
+        <p class="curso-categoria">DISEÑO E ILUSTRACIÓN</p>
+        <h3 class="curso-nombre">Adobe Illustrator para principiantes</h3>
+        <div class="curso-autor">
+          <div class="autor-avatar"></div>
+          <div class="autor-avatar autor-avatar-2"></div>
+        </div>
+        <div class="curso-meta">
+          <span>📋 8 lecciones</span>
+          <span>🕐 7h 59m</span>
+        </div>
+        <div class="curso-footer">
+          <div class="curso-precios">
+            <span class="precio-original">$129.99</span>
+            <span class="precio-actual">$119.99</span>
+          </div>
+          <a href="resumen.html" class="btn btn-primary">Ver curso</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="curso-card">
+      <div class="curso-imagen azul-vue">
+        <span class="curso-badge azul">Destacado</span>
+        <div class="curso-img-deco deco-vue"></div>
+      </div>
+      <div class="curso-body">
+        <div class="curso-estrellas">★★★★★ <span>4.73</span> <small>(4.7k+ reseñas)</small></div>
+        <p class="curso-categoria">PROGRAMACIÓN</p>
+        <h3 class="curso-nombre">Introducción a Vue.js</h3>
+        <div class="curso-autor"><div class="autor-avatar"></div></div>
+        <div class="curso-meta">
+          <span>📋 25 lecciones</span>
+          <span>🕐 17h 46m</span>
+        </div>
+        <div class="curso-footer">
+          <div class="curso-precios">
+            <span class="precio-original">$189.99</span>
+            <span class="precio-actual">$129.99</span>
+          </div>
+          <a href="resumen.html" class="btn btn-primary">Ver curso</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="curso-card">
+      <div class="curso-imagen" style="background: linear-gradient(135deg, #1b2a4a, #377dff);">
+        <span class="curso-badge verde">Nuevo</span>
+        <div class="curso-img-deco deco-python"></div>
+      </div>
+      <div class="curso-body">
+        <div class="curso-estrellas">★★★★☆ <span>4.60</span> <small>(800+ reseñas)</small></div>
+        <p class="curso-categoria">BASE DE DATOS</p>
+        <h3 class="curso-nombre">SQL desde cero: bases de datos relacionales</h3>
+        <div class="curso-autor"><div class="autor-avatar"></div></div>
+        <div class="curso-meta">
+          <span>📋 18 lecciones</span>
+          <span>🕐 5h 10m</span>
+        </div>
+        <div class="curso-footer">
+          <div class="curso-precios">
+            <span class="precio-original">$99.99</span>
+            <span class="precio-actual">$79.99</span>
+          </div>
+          <a href="resumen.html" class="btn btn-primary">Ver curso</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="curso-card">
+      <div class="curso-imagen" style="background: linear-gradient(135deg, #00c9a7, #007a65);">
+        <div class="curso-img-deco deco-illustrator"></div>
+      </div>
+      <div class="curso-body">
+        <div class="curso-estrellas">★★★★★ <span>4.88</span> <small>(2.1k+ reseñas)</small></div>
+        <p class="curso-categoria">INTELIGENCIA ARTIFICIAL</p>
+        <h3 class="curso-nombre">Machine Learning con Python</h3>
+        <div class="curso-autor">
+          <div class="autor-avatar"></div>
+          <div class="autor-avatar autor-avatar-2"></div>
+        </div>
+        <div class="curso-meta">
+          <span>📋 30 lecciones</span>
+          <span>🕐 12h 00m</span>
+        </div>
+        <div class="curso-footer">
+          <div class="curso-precios">
+            <span class="precio-original">$199.99</span>
+            <span class="precio-actual">$149.99</span>
+          </div>
+          <a href="resumen.html" class="btn btn-primary">Ver curso</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="curso-card">
+      <div class="curso-imagen" style="background: linear-gradient(135deg, #f6a623, #c97d0a);">
+        <span class="curso-badge azul">Popular</span>
+        <div class="curso-img-deco deco-vue"></div>
+      </div>
+      <div class="curso-body">
+        <div class="curso-estrellas">★★★★☆ <span>4.55</span> <small>(600+ reseñas)</small></div>
+        <p class="curso-categoria">DISEÑO</p>
+        <h3 class="curso-nombre">UI/UX Design: diseña interfaces modernas</h3>
+        <div class="curso-autor"><div class="autor-avatar"></div></div>
+        <div class="curso-meta">
+          <span>📋 20 lecciones</span>
+          <span>🕐 8h 30m</span>
+        </div>
+        <div class="curso-footer">
+          <div class="curso-precios">
+            <span class="precio-original">$139.99</span>
+            <span class="precio-actual">$109.99</span>
+          </div>
+          <a href="resumen.html" class="btn btn-primary">Ver curso</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="curso-card">
+      <div class="curso-imagen" style="background: linear-gradient(135deg, #6f42c1, #4a2d8a);">
+        <div class="curso-img-deco deco-python"></div>
+      </div>
+      <div class="curso-body">
+        <div class="curso-estrellas">★★★★★ <span>4.80</span> <small>(1.2k+ reseñas)</small></div>
+        <p class="curso-categoria">PROGRAMACIÓN</p>
+        <h3 class="curso-nombre">React.js: desarrollo de aplicaciones modernas</h3>
+        <div class="curso-autor"><div class="autor-avatar"></div></div>
+        <div class="curso-meta">
+          <span>📋 22 lecciones</span>
+          <span>🕐 9h 45m</span>
+        </div>
+        <div class="curso-footer">
+          <div class="curso-precios">
+            <span class="precio-original">$159.99</span>
+            <span class="precio-actual">$119.99</span>
+          </div>
+          <a href="resumen.html" class="btn btn-primary">Ver curso</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="curso-card">
+      <div class="curso-imagen" style="background: linear-gradient(135deg, #e83e8c, #a0195a);">
+        <span class="curso-badge verde">Nuevo</span>
+        <div class="curso-img-deco deco-illustrator"></div>
+      </div>
+      <div class="curso-body">
+        <div class="curso-estrellas">★★★★☆ <span>4.50</span> <small>(400+ reseñas)</small></div>
+        <p class="curso-categoria">PROGRAMACIÓN</p>
+        <h3 class="curso-nombre">Git y GitHub: control de versiones profesional</h3>
+        <div class="curso-autor">
+          <div class="autor-avatar"></div>
+          <div class="autor-avatar autor-avatar-2"></div>
+        </div>
+        <div class="curso-meta">
+          <span>📋 12 lecciones</span>
+          <span>🕐 4h 20m</span>
+        </div>
+        <div class="curso-footer">
+          <div class="curso-precios">
+            <span class="precio-original">$89.99</span>
+            <span class="precio-actual">$69.99</span>
+          </div>
+          <a href="resumen.html" class="btn btn-primary">Ver curso</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="curso-card">
+      <div class="curso-imagen" style="background: linear-gradient(135deg, #20c997, #0d6e50);">
+        <span class="curso-badge azul">Destacado</span>
+        <div class="curso-img-deco deco-vue"></div>
+      </div>
+      <div class="curso-body">
+        <div class="curso-estrellas">★★★★★ <span>4.92</span> <small>(3k+ reseñas)</small></div>
+        <p class="curso-categoria">PROGRAMACIÓN</p>
+        <h3 class="curso-nombre">Node.js y Express: backend desde cero</h3>
+        <div class="curso-autor"><div class="autor-avatar"></div></div>
+        <div class="curso-meta">
+          <span>📋 28 lecciones</span>
+          <span>🕐 11h 15m</span>
+        </div>
+        <div class="curso-footer">
+          <div class="curso-precios">
+            <span class="precio-original">$179.99</span>
+            <span class="precio-actual">$139.99</span>
+          </div>
+          <a href="resumen.html" class="btn btn-primary">Ver curso</a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <script src="js/componentes.js"></script>
+  <script src="js/cursos.js"></script>
+
 </body>
 </html>
